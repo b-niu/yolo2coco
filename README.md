@@ -2,6 +2,8 @@
 
 A tool for converting YOLO instance segmentation annotations to COCO format.
 
+Currently, the popular COCO and YOLO annotation format conversion tools are almost all aimed at object detection tasks, and there is no specific tool for instance segmentation tasks. The annotation format for YOLO instance segmentation differs greatly from that for object detection. Therefore, this code toolkit was developed.
+
 ## Dependencies
 
 ```
