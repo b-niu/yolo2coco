@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import argparse
 import os
 from pathlib import Path
@@ -114,7 +116,7 @@ def coco_to_yolo(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process some weights and images.")
-    parser.add_argument("coco_json", nargs=1, default=None, type=str)
+    parser.add_argument("coco_json", default=None, type=str)
     parser.add_argument("-o", "--output_dir", type=str)
     args = parser.parse_args()
     coco_to_yolo(coco_json=args.coco_json, output_dir=args.output_dir)
